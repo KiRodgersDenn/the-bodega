@@ -45,6 +45,16 @@ function EditPlant(){
                     placeholder='Name of Plant!'
                 />
                 
+                <label htmlFor='image'>Image:</label>
+                    <input
+                    id='image'
+                    value={plant.image}
+                    type='text'
+                    onChange={handleTextChange}
+                    placeholder='http://'
+                    pattern='http[s]*://.+'
+                />
+
                 <label htmlFor='botanicalName'>Botanical Name:</label>
                     <input
                     id='botanicalName'
@@ -54,16 +64,16 @@ function EditPlant(){
                     placeholder='Botanical Name'
                 />
 
-                <label htmlFor='native_area'>Native Area:</label>
+                <label htmlFor='price'>Price:</label>
                     <input
-                    id='native_area'
-                    value={plant.native_area}
+                    id='price'
+                    value={plant.price}
                     type='text'
                     onChange={handleTextChange}
-                    placeholder='Native Area'
+                    placeholder='Price'
                 />
 
-                <label htmlFor='family'>Family:</label>
+                {/* <label htmlFor='family'>Family:</label>
                     <input
                     id='family'
                     value={plant.family}
@@ -79,26 +89,16 @@ function EditPlant(){
                     type='text'
                     onChange={handleTextChange}
                     placeholder='Plant Type'
-                />
-
-                <label htmlFor='sun_exposure'>Sun Exposure:</label>
-                    <input
-                    id='sun_exposure'
-                    value={plant.sun_exposure}
-                    type='text'
-                    onChange={handleTextChange}
-                    placeholder='Sun Exposure'
-                />
-
-                {/* <label htmlFor='image'>Image:</label>
-                    <input
-                    id='image'
-                    value={plant.image}
-                    type='text'
-                    onChange={handleTextChange}
-                    placeholder='http://'
-                    pattern='http[s]*://.+'
                 /> */}
+
+                <label htmlFor='low_light'>Sun Exposure:</label>
+                    <input
+                    id='low_light'
+                    value={plant.low_light}
+                    type='text'
+                    onChange={handleTextChange}
+                    placeholder='Low Light'
+                />
 
                 <input type = 'submit' />
      

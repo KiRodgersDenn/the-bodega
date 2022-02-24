@@ -9,11 +9,11 @@ function NewPlant(){
     const[plant,setPlant]= useState({
         name: '',
         price: 0 ,
-        edition: '',
+        botanicalName: '',
         image: ''
     });
 
-    const addSnack =()=>{
+    const addPlant =()=>{
         axios.post(`${API}/plants`,plant)
         .then(
             ()=>{
@@ -30,7 +30,7 @@ function NewPlant(){
 
     const handleSubmit = (event)=>{
         event.preventDefault();
-        addSnack();
+        addPlant();
     }
 
     return(
@@ -42,7 +42,7 @@ function NewPlant(){
                     value={plant.name}
                     type='text'
                     onChange={handleTextChange}
-                    placeholder='Name of POP!'
+                    placeholder=''
                 />
                 
                 <label htmlFor='price'>Price:</label>
@@ -54,13 +54,13 @@ function NewPlant(){
                     placeholder=''
                 />
 
-                <label htmlFor='edition'></label>
+                <label htmlFor='botanicalName'></label>
                     <input
-                    id='edition'
-                    value={plant.edition}
+                    id='botanicalName'
+                    value={plant.botanicalName}
                     type='text'
                     onChange={handleTextChange}
-                    placeholder='Edition'
+                    placeholder='botanicalName'
                 />
 
                 <label htmlFor='image'>Image:</label>

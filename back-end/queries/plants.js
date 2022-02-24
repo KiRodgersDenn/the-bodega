@@ -20,7 +20,7 @@ const getOnePlant = async(id)=>{
 
 const createPlant = async(plant)=>{
     try{
-        const newPlant = await db.one("INSERT INTO plants(name,image,botanicalName,price,family,plant_type,sun_exposure) VALUES ($1,$2,$3,$4,$5,$6,$7) RETURNING *", [plant.name,plant.image,plant.botanicalName,plant.price,plant.family,plant.plant_type,plant.sun_exposure]);
+        const newPlant = await db.one("INSERT INTO plants(name,image,botanicalName,price,low_light) VALUES ($1,$2,$3,$4,$5) RETURNING *", [plant.name,plant.image,plant.botanicalName,plant.price,plant.low_light]);
         return newPlant;
     } catch(err){
         return err;
@@ -39,8 +39,8 @@ const deletePlant = async(id)=>{
 const updatePlant= async(id,plant)=>{
     try{
         const updatedPlant = await db.one(
-            "UPDATE plants SET name=$1, image=$2, botanicalName=$3, price=$4, family=$5, plant_type=$6, sun_exposure=$7 WHERE id=$8 RETURNING *",
-            [plant.name, plant.image, plant.botanicalName, plant.price, plant.family, plant.plant_type, plant.sun_exposure, id]
+            "UPDATE plants SET name=$1, image=$2, botanicalName=$3, price=$4, low_light=$5 WHERE id=$6 RETURNING *",
+            [plant.name, plant.image, plant.botanicalName, plant.price, plant.low_light, id]
         );
         return updatedPlant;
     }catch(err){

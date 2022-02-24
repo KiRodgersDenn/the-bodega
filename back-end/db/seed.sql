@@ -1,10 +1,10 @@
 \c cta_dev;
 
-INSERT INTO plants (name, image, botanicalName, price, family, plant_type, sun_exposure) VALUES
-('Monday'),
-('Tuesday'),
-('Wednesday'),
-('Thursday'),
-('Friday'),
-('Saturday'),
-('Sunday');
+INSERT INTO plants (name, image, botanicalName, price, low_light) VALUES
+('Pothos'),
+('Monstera'),
+('Snake'),
+('Peace Lily'),
+('Aloe Vera'),
+('Ponytail Palm'),
+('Jade');

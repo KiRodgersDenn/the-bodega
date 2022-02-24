@@ -11,7 +11,5 @@ CREATE TABLE plants (
     image TEXT,
     botanicalName TEXT,
     price INT,
-    family TEXT,
-    plant_type TEXT,
-    sun_exposure TEXT
+    low_light BOOLEAN
 );

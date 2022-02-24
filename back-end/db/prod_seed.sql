@@ -1,4 +1,4 @@
-INSERT INTO test (name) VALUES
+INSERT INTO plants (name) VALUES
 ('Monday'),
 ('Tuesday'),
 ('Wednesday'),
