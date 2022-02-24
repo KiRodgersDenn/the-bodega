@@ -2,7 +2,7 @@ import axios from 'axios';
 import {useState, useEffect} from 'react';
 import Plant from './Plant';
 
-const API = Process.env.REACT_APP_API_URL;
+const API = process.env.REACT_APP_API_URL;
 
 function AllPlants(){
     const [plant, setPlants] = useState([]);

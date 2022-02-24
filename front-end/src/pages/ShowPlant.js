@@ -1,6 +1,6 @@
 import PlantDetails from '../components/PlantDetails';
 
-function Index(){
+function Show(){
     return(
         <div>
             <PlantDetails/>

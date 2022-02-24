@@ -7,6 +7,7 @@ import New from "./pages/NewPlant";
 import Show from './pages/ShowPlant'
 import Navbar from './components/Navbar'
 
+
 function App(){
   return(
     <Router>

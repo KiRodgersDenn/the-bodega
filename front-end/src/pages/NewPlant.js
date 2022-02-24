@@ -1,4 +1,4 @@
-import newPlants from '../components/PlantsNewForm';
+import NewPlant from '../components/PlantNewForm';
 
 function New(){
     return(

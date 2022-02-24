@@ -1,6 +1,6 @@
 import AllPlants from '../components/EditPlant';
 
-function Index(){
+function Edit(){
     return(
         <div>
             <AllPlants/>
