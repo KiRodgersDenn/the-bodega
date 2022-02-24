@@ -1,6 +1,6 @@
 \c cta_dev;
 
-INSERT INTO test (name) VALUES
+INSERT INTO plants (name, image, botanicalName, price, family, plant_type, sun_exposure) VALUES
 ('Monday'),
 ('Tuesday'),
 ('Wednesday'),

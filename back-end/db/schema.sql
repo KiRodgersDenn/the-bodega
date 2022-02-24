@@ -5,7 +5,13 @@ CREATE DATABASE cta_dev;
 
 DROP TABLE IF EXISTS test;
 
-CREATE TABLE test (
+CREATE TABLE plants (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    image TEXT,
+    botanicalName TEXT,
+    price INT,
+    family TEXT,
+    plant_type TEXT,
+    sun_exposure TEXT
 );
