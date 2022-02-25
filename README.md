@@ -1,3 +1,7 @@
+frontend botanicalbodega.netlify.app
+backend https://the-bodega-be.herokuapp.com/
+
+
 # PERN Final Project Template
 
 - select `use this template`
